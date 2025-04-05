@@ -1,6 +1,6 @@
 {
   "name": "better-speech-recognition",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An improved speech recognition library with TypeScript support",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
