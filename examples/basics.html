@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Better Speech Recognition Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Better Speech Recognition Demo</h1>
+
+    <div id="result">
+      <p id="final">Final result will appear here.</p>
+      <p id="interim" class="interim">Interim result will appear here.</p>
+    </div>
+
+    <div class="controls">
+      <div>
+        <button id="startBtn">Start</button>
+        <button id="stopBtn" disabled>Stop</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+      <div style="margin-top: 0.5rem">
+        <label for="language">Language:</label>
+        <select id="language">
+          <option value="en-US">English (US)</option>
+          <option value="en-GB">English (UK)</option>
+          <option value="es-ES">Spanish</option>
+          <option value="fr-FR">French</option>
+          <option value="de-DE">German</option>
+          <option value="ja-JP">Japanese</option>
+          <option value="zh-CN">Chinese</option>
+        </select>
+      </div>
+      <p class="status" id="status">Ready to start</p>
+    </div>
+
+    <script src="./scripts.js" type="module"></script>
+  </body>
+</html>

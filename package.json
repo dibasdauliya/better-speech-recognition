@@ -1,12 +1,48 @@
 {
-  "name": "speech-recognition",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "better-speech-recognition",
+  "version": "0.1.0",
+  "description": "An improved speech recognition library with TypeScript support",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "keywords": [
+    "speech",
+    "recognition",
+    "voice",
+    "web speech api",
+    "speech-to-text",
+    "typescript"
+  ],
+  "author": "Dibas Dauliya",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@babel/preset-typescript": "^7.23.0",
+    "@rollup/plugin-babel": "^6.0.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "rollup": "^3.28.0",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dibasdauliya/better-speech-recognition.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dibasdauliya/better-speech-recognition/issues"
+  },
+  "homepage": "https://github.com/dibasdauliya/better-speech-recognition#readme"
 }

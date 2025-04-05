@@ -1,0 +1,31 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+#result {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  min-height: 200px;
+  margin-bottom: 1rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.interim {
+  color: gray;
+}
+.controls {
+  margin: 1rem 0;
+}
+select {
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+.status {
+  margin-top: 1rem;
+  font-style: italic;
+}
