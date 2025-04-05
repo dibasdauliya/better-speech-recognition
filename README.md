@@ -1,5 +1,7 @@
 # Better Speech Recognition
 
+[![npm version](https://img.shields.io/npm/v/better-speech-recognition.svg)](https://www.npmjs.com/package/better-speech-recognition)
+
 An improved speech recognition library with TypeScript support, built on top of the Web Speech API.
 
 ## Features
