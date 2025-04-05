@@ -94,7 +94,7 @@ class BetterSpeechRecognition {
         }
       }
 
-      this.transcript += ` ${finalTranscript}`;
+      this.transcript += finalTranscript;
       this.interimTranscript = interimTranscript;
 
       if (this.onResult) {
