@@ -10,14 +10,36 @@ class BetterSpeechRecognition {
   private options: SpeechRecognitionOptions;
   private recognition: SpeechRecognitionInstance;
   private isListening: boolean;
+  /**
+   * The complete accumulated transcript of all finalized speech recognition results
+   * since the beginning of the session or last reset.
+   */
   private transcript: string;
+  /**
+   * The current interim (non-finalized) transcript from the most recent recognition cycle.
+   */
   private interimTranscript: string;
 
+  /**
+   * Callback fired when speech recognition results are available.
+   * The callback receives an object with:
+   * - finalTranscript: The newly recognized text that has been finalized in the current recognition cycle
+   * - interimTranscript: Words that are still being processed and may change
+   * - completeTranscript: Accumulated history of all finalized text since the beginning or last reset
+   * - event: The original SpeechRecognitionEvent
+   */
   public onResult: ((result: RecognitionResultCallback) => void) | null;
+  /** Callback fired when speech recognition has started */
   public onStart: ((event: Event) => void) | null;
+  /** Callback fired when speech recognition has ended */
   public onEnd: ((event: Event) => void) | null;
+  /** Callback fired when a speech recognition error occurs */
   public onError: ((event: SpeechRecognitionErrorEvent) => void) | null;
 
+  /**
+   * Creates a new BetterSpeechRecognition instance
+   * @param options - Configuration options for speech recognition
+   */
   constructor(options: SpeechRecognitionOptions = {}) {
     // Default options
     this.options = {
