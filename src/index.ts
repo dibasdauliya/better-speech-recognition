@@ -30,6 +30,3 @@ export function createSpeechRecognition(options?: {
 }
 
 export { BetterSpeechRecognition };
-
-// Default export for convenience
-export default BetterSpeechRecognition;

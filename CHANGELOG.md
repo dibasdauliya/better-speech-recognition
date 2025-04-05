@@ -18,5 +18,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release with core functionality
 
+## [0.2.0] - 2025-04-05
+
+- Remove multiple `export default` and named exports. Use only named exports.
+
 [Unreleased]: https://github.com/dibasdauliya/better-speech-recognition/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/dibasdauliya/better-speech-recognition/releases/tag/v0.1.0
